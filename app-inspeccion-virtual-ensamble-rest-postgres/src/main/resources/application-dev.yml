@@ -1,0 +1,16 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://database-postgres-training.c28iuxvvoumq.us-east-1.rds.amazonaws.com:5432/hexagonal_architecture
+    username: postgres #Variable
+    password: D4t4bas3-Tra1n1ng #Variable
+  jpa:
+    properties:
+      hibernate: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  main:
+    allow-bean-definition-overriding: true
